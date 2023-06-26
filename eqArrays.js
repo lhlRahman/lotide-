@@ -8,16 +8,17 @@ const assertEqual = function(actual, expected) {
 
 };
 const eqArrays = function(arrOne, arrTwo) {
-  if (arrOne.length === arrTwo.length) {
-    for (let i = 0; i < arrOne.length; i ++) {
-      if (arrOne[i] !== arrTwo[i]) {
-        return false;
-      }
-    }
-    return true;
-  } else {
+  if (arrOne.length !== arrTwo.length) {
     return false;
   }
+
+  for (let i = 0; i < arrOne.length; i++) {
+    if (arrOne[i] !== arrTwo[i]) {
+      return false;
+    }
+  }
+
+  return true;
 };
 // TEST CODE
 console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
