@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@lhlrahman/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A Function library created with inspiration from lodash",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/lhlRahman/lotide-.git"
   },
-  "author": "",
+  "author": "Abdul Rahman",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lhlRahman/lotide-/issues"
