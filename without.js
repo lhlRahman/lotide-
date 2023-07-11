@@ -1,17 +1,3 @@
-const eqArrays = function(arrOne, arrTwo) {
-  if (arrOne.length !== arrTwo.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arrOne.length; i++) {
-    if (arrOne[i] !== arrTwo[i]) {
-      return false;
-    }
-  }
-
-  return true;
-};
-
 const without = function(arrMain, arrRemove) {
   let result = [];
 
@@ -32,9 +18,5 @@ const without = function(arrMain, arrRemove) {
 
   return result;
 };
-console.log(without([1, 2, 3], [1]));
-console.log(without([1, 2, 3, 45], [45, 2]));
 
-const words = ["hello", "world", "lighthouse"];
-console.log(without(words, ["lighthouse"]));
-console.log(eqArrays(words, ["hello", "world", "lighthouse"]));
+module.exports = without;
